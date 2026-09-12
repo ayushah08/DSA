@@ -53,17 +53,14 @@ public class RotationSearch {
         while (start <= end) {
 
             int mid = (start + end) / 2;
-            //TODO target k equal
             if (arr[mid] == target) {
                 return mid;
             }
 
-            //TODO target is greater
             else if (arr[mid] < target) {
                 start = mid + 1;
             }
 
-            //Todo Target is smaller
             else {
                 end = mid - 1;
             }
